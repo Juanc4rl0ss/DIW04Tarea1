@@ -1,0 +1,317 @@
+/* RESET Y VARIABLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --main-color: #ff1616;
+    --secondary-color: #333;
+    --font-sans: 'Roboto', 'Arial', sans-serif;
+    --font-serif: 'Georgia', serif;
+    --header-bg-color: black;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: #f9f9f9;
+}
+
+/* UL RESET */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--header-bg-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header__logo {
+    width: 75px;
+    margin-bottom: 20px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.header__menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu-link:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+.header__menu-link--active {
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN */
+.main__title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin: 20px 0;
+    font-weight: 300; 
+    letter-spacing: -0.02em; 
+}
+
+/* AUTOR INFO */
+.main__author-info {
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+.main__author-date {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* IMAGEN PRINCIPAL */
+.main__image {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.main__image-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main__image-caption {
+    position: absolute;
+    right: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* SECCIÓN ARTÍCULOS */
+.main__articles {
+    width: 50%; 
+    margin: 20px auto; 
+    text-align: justify;
+}
+
+.main__articles__tipo__robots {
+    width: 60%;
+    text-align: justify;
+    margin: 20px auto;
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    border-left: var(--main-color) 3px solid;
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.article__title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    text-align: start; 
+}
+
+.article__text {
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+
+.article__cite {
+    font-style: italic;
+    color: var(--main-color);
+}
+
+.article__blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid var(--main-color);
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+/* LISTAS */
+.article__list__square {
+    margin-left: 20px;
+    color: var(--secondary-color);
+    list-style-type: square;
+}
+.article__list {
+    margin-left: 20px;
+    color: var(--secondary-color);
+    list-style-type: disc;
+}
+
+.article__list-item {
+    margin-bottom: 10px;
+}
+
+/* VIDEOS Y FIGCAPTION */
+.youtube__video {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.article__video-frame {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+.article__video-caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* SECCIÓN AUTOR */
+.author-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.author-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.author-container p {
+    font-size: 14px; 
+    color: #666;
+    margin-bottom: 10px; 
+}
+
+.author-container a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.author-container a:hover {
+    text-decoration: underline;
+}
+
+.author__details {
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: justify;
+    font-size: 0.9rem; 
+    line-height: 1.6;
+}
+
+/* PÁRRAFOS DE ANCHO COMPLETO */
+.full-width-paragraph {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Página de tipos de robots */
+.main__articles__tipo__robots__img{
+    float:left;
+    margin-left:-35px;
+}
+.main_images_robots {
+    display: flex;   
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+.robots {
+    margin: 20px 0;
+  }
+  
+  .robots__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .robots__description {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .robots__details {
+    margin-bottom: 10px;
+  }
+  
+  .robots__figure {
+    text-align: center;
+  }
+  
+  .robots__image {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .robots__caption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .robots__name {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; 
+  }
+
+  /* ENLACES */  
+  .link-highlight {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  .link-highlight:hover {
+    text-decoration: underline; 
+    color: var(--main-color);
+  }
+
+/* FOOTER */
+.footer {
+    background-color: var(--header-bg-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer__text {
+    font-size: 0.9rem;
+}
